@@ -1,6 +1,24 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+std::vector sort (vector) {std::vector<int> sorted_list;
+for (int i = 0; i < amount; i ++) {
+int small = 0;
+for (int j = 0; j < num_list.size(); j ++) {
+if (num_list[j] < num_list[small] )
+{
+small = j;
+}
+}
+sorted_list.push_back(num_list[small]);
+num_list.erase(num_list.begin()+ small);
+}
+std::cout << "Here are the ordered numbers from "<< 	vector <<".txt \n";
+for (int num : sorted_list) {
+std:: cout << num << " ";
+}
+;
+std::int find_lowest (vector);
 
 
 int main() {
@@ -41,3 +59,4 @@ newFile << num << "\n";
 }
 newFile.close();
 }
+                                                      
